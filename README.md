@@ -1,1 +1,0 @@
-# WinterArc_CodingChallenge
