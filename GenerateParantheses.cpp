@@ -18,7 +18,7 @@ private:
     void generateParans(vector<string>& genParans, string current, int open, int close, int max) {
         if(current.length() == max * 2)  { genParans.push_back(current); return; }
         if(open < max) { generateParans(genParans, current + '(', open+1, close, max ); }
-        if(close < max) { generateParans(genParans, current + ')', open, close+1, max ); }
+        if(close < open) { generateParans(genParans, current + ')', open, close+1, max ); }
     }
 };
 
